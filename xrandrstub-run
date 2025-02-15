@@ -1,0 +1,6 @@
+#!/bin/sh
+
+program="$1"
+shift
+
+LD_PRELOAD=/usr/lib/libxrandrstub.so "$program" "$@"
